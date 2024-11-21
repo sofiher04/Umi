@@ -209,4 +209,22 @@ with col2:
 
 # Cerrar archivo PDF
 pdfFileObj.close()
+st.subheader("Galería de Imágenes")
+
+# Ruta de las imágenes
+image_files = [
+    "Cacti.jpeg",
+    "MonsteraDeliciosa.jpg",
+    "Orquid.jpg",
+    "Suculentas.jpg",
+]
+
+# Mostrar las imágenes en columnas
+cols = st.columns(len(image_files))
+
+for col, img_path in zip(cols, image_files):
+    with col:
+        image = Image.open(img_path)
+        st.image(image, use_column_width=True, caption=os.path.basename(img_path))
+
 
