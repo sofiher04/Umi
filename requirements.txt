@@ -1,14 +1,57 @@
+# Streamlit
+streamlit==1.18.1
+
+# Ultralytics YOLO
+ultralytics==8.0.173
+yolov5==7.0.9
+
+# Git
+gitpython>=3.1.30
+
+# Visualización
+matplotlib>=3.3
+altair==4.2.0
+
+# Cálculos y álgebra
+numpy>=1.22.2
+scipy>=1.4.1
+torch>=1.8.0  # see https://pytorch.org/get-started/locally (recommended)
+torchvision>=0.9.0
+thop>=0.1.1  # FLOPs computation
+
+# OpenCV
+opencv-python>=4.1.1
+
+# Imágenes
+Pillow>=7.1.2
+
+# Recursos del sistema
+psutil  # system resources
+
+# YAML
+PyYAML>=5.3.1
+
+# Solicitudes HTTP
+requests>=2.23.0
+
+# Hugging Face
+huggingface-hub==0.24.7
+
+# Lenguaje natural
 langchain==0.0.154
+tiktoken
+
+# PDF y procesamiento de texto
 PyPDF2==3.0.1
 python-dotenv==1.0.0
-streamlit==1.18.1
-faiss-cpu==1.7.4
-streamlit-extras
-openai==0.28
-tiktoken
+
+# Texto a voz
 gTTS==2.2.2
 googletrans==3.1.0a0
+
+# Otros
+faiss-cpu==1.7.4
+streamlit-extras
 streamlit-lottie
-altair==4.2.0
 paho-mqtt==1.6.1
 pytz
