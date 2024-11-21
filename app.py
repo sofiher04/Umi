@@ -27,7 +27,6 @@ import pandas as pd
 
 #import sys
 #sys.path.append('./ultralytics/yolo')
-
 #from utils.checks import check_requirements
 
 MQTT_BROKER = "broker.mqttdashboard.com"
@@ -194,7 +193,7 @@ with col2:
             enhanced_question = user_question
         
         docs = knowledge_base.similarity_search(enhanced_question)
-        llm = OpenAI(model_name="gpt-4o-mini")
+        llm = OpenAI(model_name="gpt-4")
         chain = load_qa_chain(llm, chain_type="stuff")
         
         with st.spinner('Analizando tu pregunta...'):
