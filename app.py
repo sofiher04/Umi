@@ -209,7 +209,7 @@ with col2:
 
 # Cerrar archivo PDF
 pdfFileObj.close()
-st.subheader("Galería de Imágenes")
+st.subheader("Compara tu planta con alguna de estas imágenes y pregúntale a Umi sobre sus cuidados")
 
 # Ruta de las imágenes
 image_files = [
